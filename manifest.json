@@ -1,0 +1,10 @@
+{
+  "name": "우리의 작은 우주",
+  "short_name": "우리 둘",
+  "description": "채언과 대현의 커플 기록장",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff8fa",
+  "theme_color": "#fff5f7",
+  "icons": []
+}

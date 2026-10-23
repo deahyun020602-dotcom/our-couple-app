@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff5f7"><meta name="description" content="우리 둘만의 커플 기록장">
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+<title>우리의 작은 우주 ♥</title>
+</head>
+<body>
+<header class="top"><div><div class="eyebrow">OUR LITTLE UNIVERSE</div><h1>채언 <span>♥</span> 대현</h1></div><button id="settingsBtn" class="iconbtn" aria-label="설정">⚙️</button></header>
+<main>
+<section class="hero card"><div class="hero-label">우리의 시작</div><div id="days" class="days">D+0</div><div id="startLabel" class="muted">처음 만난 날을 설정해 주세요</div><div class="nextline"><span>다음 기념일</span><strong id="nextAnniv">날짜를 설정해 주세요</strong></div></section>
+<section class="quickgrid">
+<button data-tab="diary" class="quick card"><span>📝</span><b>오늘의 일기</b><small>우리의 하루</small></button>
+<button data-tab="album" class="quick card"><span>📸</span><b>공유 앨범</b><small>소중한 순간</small></button>
+<button data-tab="bucket" class="quick card"><span>🪣</span><b>버킷리스트</b><small>함께 이룰 일</small></button>
+<button data-tab="expenses" class="quick card"><span>💰</span><b>데이트 가계부</b><small>함께 쓴 기록</small></button>
+</section>
+<section class="card section"><div class="sectionhead"><h2>우리의 공간</h2><span class="muted">둘만의 기록</span></div><div id="homeStats" class="stats"></div><div class="sectionhead"><h2>최근 기록</h2><button class="textbtn" data-tab="diary">모두 보기 →</button></div><div id="recent"></div></section>
+<nav class="tabs" id="tabs">
+<button data-tab="home" class="active">🏠<small>홈</small></button><button data-tab="diary">📝<small>일기</small></button><button data-tab="calendar">🗓️<small>일정</small></button><button data-tab="bucket">🪣<small>목록</small></button><button data-tab="more">☰<small>더보기</small></button>
+</nav>
+<section id="view" class="card section hidden"></section>
+</main>
+<div id="modal" class="modal hidden"><div class="modalbox"><div class="modalhead"><h2 id="modalTitle">설정</h2><button id="closeModal" class="iconbtn">✕</button></div><div id="modalBody"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
+</body></html>
